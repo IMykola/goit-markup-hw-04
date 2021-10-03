@@ -8,6 +8,7 @@
   --background-color: #2f303a;
   --header-solid-color: #ececec;
   --background-team-color: #f5f4fa;
+  --background-svg: #afb1b8;
 }
 
 body,
@@ -92,6 +93,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team {
@@ -452,7 +454,7 @@ footer {
 
 .footer-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: block;
   padding: 60px 0;
 }
 
@@ -471,14 +473,153 @@ footer {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-icon2 {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
-.header-icon1 :hover {
+.benefits-icon-blok {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: var(--background-team-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
+
+.team-list-ikon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.team-list-ikon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-list-ikon-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-list-ikon-item-link-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--background-svg);
+}
+
+.team-list-ikon-item-link:hover,
+.team-list-ikon-item-link:focus {
+  background-color: var(--accent-color);
+}
+.team-list-ikon-item-link:hover svg,
+.team-list-ikon-item-link:focus svg {
+  fill: var(--primary-white-color);
+}
+
+.team-list-ikon-item-link-svg:hover,
+.team-list-ikon-item-link-svg:focus {
+  fill: var(--primary-white-color);
+}
+
+.regular-customers-list {
+  display: flex;
+}
+
+.regular-customers-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regular-customers-list-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--background-svg);
+  border-radius: 4px;
+}
+
+.regular-customers-list-item-svg {
+  width: 106px;
+  height: 60px;
+}
+
+.regular-customers-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.regular-customers-list-item-link {
+  fill: var(--background-svg);
+  color: var(--background-svg);
+}
+.regular-customers-list-item-link:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.team-list-ikon-item-link-footer {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-adres {
+  margin-right: 70px;
+}
+
+.head-style {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.team-list-ikon-item-link-footer {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team-list-ikon-item-link-svg-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--background-svg);
 }
