@@ -454,7 +454,7 @@ footer {
 
 .footer-flex {
   display: flex;
-  flex-direction: block;
+  flex-direction: row;
   padding: 60px 0;
 }
 
@@ -464,9 +464,6 @@ footer {
 
 .footer-list-item: {
   margin-bottom: 60px;
-}
-.footer-logo {
-  margin-bottom: 20px;
 }
 
 .header-icon1 {
